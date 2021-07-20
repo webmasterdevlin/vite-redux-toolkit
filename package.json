@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
     "backend": "json-server --watch db.json --port 5000 --delay=1000",
     "start:fullstack": "concurrently \"npm run backend\" \"npm run start\""
   },
